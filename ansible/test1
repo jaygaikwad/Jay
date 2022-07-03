@@ -1,0 +1,14 @@
+---
+- hosts: ansibleclient1
+  tasks:
+  - name : create user
+    user :
+       name: jay
+       password: 'jay1234'
+       state: present 
+       shell: /bin/bash
+       createhome: yes
+       home: /home/jay
+       
+       
+   
